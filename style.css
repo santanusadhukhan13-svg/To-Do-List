@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',arial,sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 550px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+}
+
+.to-do-app h2{
+    color: #02070f;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 40px; 
+    justify-content: center;   
+}
+
+.to-do-app h2 span{
+    color: #1b5ee4;
+    margin-right: 10px;
+}
+
+.to-do-app p{
+    width: 100%;
+    margin: 15px auto 40px;
+    text-align: center;
+    color: #797979;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.row input{
+    flex: 1;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    padding: 12px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.row button{
+    padding: 7px 20px 7px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1b5ee4;
+    color: #fff;
+}
+
+.row button:hover{
+    background-color: #022f87;
+}
+
+.tasklist li{
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+}
+
+.tasklist li span{
+    flex: 1;
+}
+
+
+@media only screen and (max-width: 455px) {
+    .container{
+        padding: 10px;
+    }
+
+    .to-do-app{
+        margin: 40px auto 20px;
+        padding: 30px 18px 45px;
+    }
+
+    .to-do-app h2{
+        font-size: 32px;
+    }
+
+    .to-do-app p{
+        margin-bottom: 30px;
+    }
+
+    .row input{
+        min-width: 0;
+    }
+
+    .row button{
+        padding: 7px 14px;
+    }
+}
